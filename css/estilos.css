@@ -23,9 +23,11 @@ header {
   padding: 10px 20px;
   position: static;
 }
+
 .logo-link {
   width: 100px;
 }
+
 header ul {
   list-style: none;
   display: flex;
@@ -49,6 +51,7 @@ header a {
   color: #3f3f3f;
   text-align: left;
 }
+
 .subtitulo_banner {
   font-size: 28px;
   font-weight: 400;
@@ -70,6 +73,7 @@ header a {
   background-position: bottom;
   background-size: cover;
 }
+
 .boton {
   background-color: #cb2390;
   font-weight: 600;
@@ -80,7 +84,7 @@ header a {
   border-style: none;
 }
 
-/* Sección info------- */
+/* ----- Sección info------- */
 /* textos */
 .titulo_info {
   font-size: 32px;
@@ -96,6 +100,7 @@ header a {
   justify-content: space-between;
   align-items: center;
 }
+
 .industrias {
   display: flex;
   flex-direction: row;
@@ -116,6 +121,7 @@ header a {
   padding: 16px;
   gap: 12px;
 }
+
 .lamp {
   display: flex;
   flex-direction: column;
@@ -124,6 +130,7 @@ header a {
   padding: 16px;
   gap: 12px;
 }
+
 .hand {
   display: flex;
   flex-direction: column;
@@ -132,6 +139,7 @@ header a {
   padding: 16px;
   gap: 12px;
 }
+
 .search {
   display: flex;
   flex-direction: column;
@@ -140,31 +148,37 @@ header a {
   padding: 16px;
   gap: 12px;
 }
+
 h3 {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
   color: #414042;
 }
+
 p {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   color: #6d6e71;
 }
+
 /* Iconos */
 .icon_eye {
   width: 48px;
   height: 48px;
 }
+
 .icon_lamp {
   width: 48px;
   height: 48px;
 }
+
 .icon_hand {
   width: 48px;
   height: 48px;
 }
+
 .icon_search {
   width: 48px;
   height: 48px;
@@ -173,6 +187,7 @@ p {
 .seccion_info {
   padding-left: 16px;
 }
+
 /* Sección Somos----- */
 .somos_popit {
   display: flex;
@@ -183,9 +198,11 @@ p {
   margin-top: 80px;
   margin-bottom: 60px;
 }
+
 .imagen_somos {
   width: 500px;
 }
+
 .textos_somos_popit {
   display: flex;
   flex-direction: column;
@@ -205,11 +222,13 @@ p {
   color: #5f5f5f;
   font-weight: 600;
 }
+
 .subtitulo_somospopit {
   font-size: 20px;
   color: #5f5f5f;
   font-weight: 500;
 }
+
 .texto_somos {
   font-size: 16px;
   font-weight: 400;
@@ -234,6 +253,7 @@ p {
   height: 360px;
   width: 800px;
 }
+
 .titulo_partner {
   font-family: "Barlow", sans-serif;
   font-size: 32px;
@@ -254,26 +274,31 @@ footer {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
 .logo {
   width: 80px;
   height: 80px;
 }
+
 .texto_footer {
   color: #5f5f5f;
   text-align: center;
 }
+
 footer nav ul li a {
   font-size: 16px;
   font-weight: 400;
   color: #5f5f5f;
   text-decoration: none;
 }
+
 .lista_logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
 }
+
 .footer_list {
   list-style: none;
 }
@@ -283,18 +308,22 @@ footer nav ul li a {
   flex-direction: row;
   justify-content: center;
 }
+
 .instagram_logo {
   width: 48px;
   height: 48px;
 }
+
 .linkedin_logo {
   width: 48px;
   height: 48px;
 }
+
 .youtube_logo {
   width: 48px;
   height: 48px;
 }
+
 .redes_texto {
   display: flex;
   flex-direction: column;
@@ -321,12 +350,14 @@ footer nav ul li a {
   background-position: top;
   background-size: cover;
 }
+
 .titulo_banner_nosotros {
   font-size: 42px;
   font-weight: 700;
   color: #3f3f3f;
   text-align: left;
 }
+
 .subtitulo_banner_nosotros {
   font-size: 24px;
   font-weight: 400;
@@ -342,12 +373,14 @@ footer nav ul li a {
   flex-direction: column;
   justify-content: center;
 }
+
 .primer_parrafo {
   color: #5f5f5f;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
 }
+
 .segundo_parrafo {
   color: #5f5f5f;
   text-align: center;
@@ -364,6 +397,7 @@ footer nav ul li a {
   padding-top: 40px;
   padding-bottom: 80px;
 }
+
 .textos_vision {
   display: flex;
   flex-direction: column;
@@ -379,24 +413,28 @@ footer nav ul li a {
   text-align: left;
   padding-bottom: 60px;
 }
+
 .parrafo_vision1 {
   color: #5f5f5f;
   font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
+
 .parrafo_vision3 {
   color: #5f5f5f;
   font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
+
 .parrafo_vision2 {
   color: #5f5f5f;
   font-size: 20px;
   font-weight: 700;
   text-align: left;
 }
+
 .imagen_vision {
   width: 500px;
 }
@@ -420,12 +458,14 @@ footer nav ul li a {
   background-size: cover;
   margin-bottom: 200px;
 }
+
 .titulo_banner_servicios {
   font-size: 42px;
   font-weight: 700;
   color: #5f5f5f;
   text-align: left;
 }
+
 .subtitulo_banner_servicios {
   font-size: 24px;
   font-weight: 400;
@@ -434,7 +474,7 @@ footer nav ul li a {
 }
 
 .seccion_servicios_grid {
-  background-color: #80a2f6;
+  background-color: #e9efff;
   margin-top: 80px;
   margin-bottom: 100px;
   width: 1440px;
@@ -455,16 +495,19 @@ footer nav ul li a {
 .titulo_servicios-grid {
   font-size: 36px;
   font-weight: 600;
-  color: #e7e4f8;
+  color: #475a8b;
   text-align: center;
 }
+
 .digital_grid {
   background-color: #475a8b;
   align-items: center;
   align-content: center;
   padding-bottom: 16px;
   width: 472px;
+  border-radius: 8px;
 }
+
 .parrafo1_digital-grid {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -472,6 +515,7 @@ footer nav ul li a {
   font-size: 18px;
   font-weight: 600;
 }
+
 .parrafo2_digital-grid {
   padding-bottom: 8px;
   color: #fafafa;
@@ -486,7 +530,9 @@ footer nav ul li a {
   align-content: center;
   padding-bottom: 16px;
   width: 472px;
+  border-radius: 8px;
 }
+
 .parrafo1_ux-grid {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -494,6 +540,7 @@ footer nav ul li a {
   font-size: 18px;
   font-weight: 600;
 }
+
 .parrafo2_ux-grid {
   padding-bottom: 8px;
   color: #fafafa;
@@ -507,7 +554,9 @@ footer nav ul li a {
   align-items: center;
   align-content: center;
   padding-bottom: 16px;
+  border-radius: 8px;
 }
+
 .parrafo1_equipo-grid {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -515,6 +564,7 @@ footer nav ul li a {
   font-size: 18px;
   font-weight: 600;
 }
+
 .parrafo2_equipo-grid {
   padding-bottom: 8px;
   color: #fafafa;
@@ -522,17 +572,21 @@ footer nav ul li a {
   font-weight: 400;
   padding: 6px 40px;
 }
+
 .cloud_grid {
   background-color: #475a8b;
   align-items: center;
   align-content: center;
   padding-bottom: 16px;
   width: 300px;
+  border-radius: 8px;
 }
+
 .imagen_cloud-grid {
   width: 300px;
   height: 278px;
 }
+
 .parrafo1_cloud-grid {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -540,6 +594,7 @@ footer nav ul li a {
   font-size: 18px;
   font-weight: 600;
 }
+
 .parrafo2_cloud-grid {
   padding-bottom: 8px;
   color: #fafafa;
@@ -547,6 +602,7 @@ footer nav ul li a {
   font-weight: 400;
   padding: 6px 40px;
 }
+
 .metrica-grid {
   background-color: #475a8b;
   align-items: center;
@@ -554,11 +610,14 @@ footer nav ul li a {
   padding-bottom: 16px;
   width: 300px;
   height: 403px;
+  border-radius: 8px;
 }
+
 .imagen_metrica-grid {
   width: 300px;
   height: 278px;
 }
+
 .parrafo1_metrica-grid {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -566,6 +625,7 @@ footer nav ul li a {
   font-size: 18px;
   font-weight: 600;
 }
+
 .parrafo2_metrica-grid {
   padding-bottom: 8px;
   color: #fafafa;
@@ -574,71 +634,84 @@ footer nav ul li a {
   padding: 6px 40px;
 }
 
-/* Mobile explícito */
+/* --------MEDIA QUERY PARA MOBILE (<=480px)-----*/
 @media (max-width: 480px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+    padding: 12px 16px;
   }
+
   .logo-link {
-    width: 32px;
-    height: auto;
+    width: auto;
   }
+
   nav {
     width: 100%;
   }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
   nav a {
     display: block;
-  }
-  header a {
     font-size: 14px;
   }
-  .titulo_banner {
-    font-size: 32px;
-    text-align: center;
-  }
-  .subtitulo_banner {
-    font-size: 20px;
-    text-align: center;
-  }
+
+  /* Banner*/
+
   .banner {
-    height: 400px;
-    padding-top: 80px;
-    padding-left: 40px;
-    padding-right: 40px;
-    gap: 40px;
-    background-position: center;
+    height: auto;
+    padding: 60px 20px;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
   }
+
+  .titulo_banner {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .subtitulo_banner {
+    font-size: 18px;
+    text-align: center;
+  }
+
   .boton {
-    display: none;
+    display: block;
   }
 
   /* Sección info */
   .titulo_info {
-    font-size: 24px;
-    margin-top: 30px;
-    padding-left: 16px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
   }
+
   .seccion_info {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 20px 40px;
   }
+
   .industrias {
     flex-direction: column;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 4px;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
   }
+
   .eye,
   .lamp,
   .hand,
   .search {
-    padding: 12px;
-    gap: 8px;
+    padding: 8px;
+    width: 100%;
   }
+
   .icon_eye,
   .icon_lamp,
   .icon_hand,
@@ -646,10 +719,234 @@ footer nav ul li a {
     width: 36px;
     height: 36px;
   }
-  h3 {
-    font-size: 14px;
-  }
+
+  h3,
   p {
     font-size: 14px;
   }
+
+  /* Somos Popit */
+  .somos_popit {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .textos_somos_popit {
+    padding: 20px;
+  }
+
+  .imagen_somos {
+    width: 75%;
+  }
+
+  .titulo_somospopit {
+    font-size: 24px;
+  }
+
+  .subtitulo_somospopit {
+    font-size: 18px;
+  }
+
+  .texto_somos {
+    font-size: 14px;
+  }
+
+  /* Partners */
+  .seccion_partners {
+    padding: 20px 40px;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .titulo_partner {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .seccion_partners img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .lista_logo {
+    align-items: center;
+  }
+
+  .footer_list a {
+    display: block;
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .redes_texto {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .redes_sociales img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .texto_footer {
+    font-size: 12px;
+  }
+
+  /*---- Página Nosotros --------*/
+
+  /*Banner*/
+  .banner_nosotros {
+    height: auto;
+    background-size: cover;
+    padding: 60px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo_banner_nosotros {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .subtitulo_banner_nosotros {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* Sección info */
+  .seccion_somos {
+    padding: 20px;
+  }
+
+  .primer_parrafo,
+  .segundo_parrafo {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Sección visión y valores */
+  .seccion_vision_valores {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .imagen_vision {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .textos_vision {
+    padding: 0;
+    gap: 12px;
+  }
+
+  .titulo_vision {
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .parrafo_vision1,
+  .parrafo_vision2,
+  .parrafo_vision3 {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  /*---- Página Servicios --------*/
+
+  /*  Banner */
+  .banner_servicios {
+    height: auto;
+    padding: 60px 20px;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    margin-bottom: 40px;
+  }
+
+  .titulo_banner_servicios {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .subtitulo_banner_servicios {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /*  Grid de servicios */
+  .seccion_servicios_grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .titulo_servicios-grid {
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .digital_grid,
+  .ux_grid,
+  .equipo_grid,
+  .cloud_grid,
+  .metrica-grid {
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .digital_grid img,
+  .ux_grid img,
+  .equipo_grid img,
+  .cloud_grid img,
+  .metrica-grid img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .parrafo1_digital-grid,
+  .parrafo1_ux-grid,
+  .parrafo1_equipo-grid,
+  .parrafo1_cloud-grid,
+  .parrafo1_metrica-grid {
+    font-size: 16px;
+  }
+
+  .parrafo2_digital-grid,
+  .parrafo2_ux-grid,
+  .parrafo2_equipo-grid,
+  .parrafo2_cloud-grid,
+  .parrafo2_metrica-grid {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+
+
 }
