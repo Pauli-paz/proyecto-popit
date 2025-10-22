@@ -1,0 +1,17 @@
+// scss/estilos.scss (Archivo principal que se compila a css/estilos.css)
+
+// 1. VARIABLES y Herramientas
+@import "variables";
+@import "mixins_extends";
+
+// 2. Estilos Base
+@import "base";
+
+// 3. Estilos de Página
+@import "paginas/_home";
+@import "paginas/_nosotros";
+@import "paginas/_servicios";
+@import "paginas/_contacto";
+
+// 4. Estilos Finales (Footer)
+@import "footer";

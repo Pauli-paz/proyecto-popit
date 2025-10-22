@@ -1,0 +1,357 @@
+
+/* --------MEDIA QUERY PARA MOBILE (<=480px)-----*/
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+  }
+
+  .logo-link {
+    width: auto;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav a {
+    display: block;
+    font-size: 14px;
+  }
+
+    .banner {
+      height: auto;
+      padding: 60px 20px;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+    }
+
+    .titulo_banner {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .subtitulo_banner {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .boton {
+      display: block;
+    }
+
+    /* Sección info */
+    .titulo_info {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .seccion_info {
+      padding: 20px 40px;
+    }
+
+    .industrias {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0 20px;
+      gap: 16px;
+    }
+
+    .eye,
+    .lamp,
+    .hand,
+    .search {
+      padding: 8px;
+      width: 100%;
+    }
+
+    .icon_eye,
+    .icon_lamp,
+    .icon_hand,
+    .icon_search {
+      width: 36px;
+      height: 36px;
+    }
+
+    .h3,
+    .p {
+      font-size: 14px;
+    }
+
+    /* Somos Popit */
+    .somos_popit {
+      flex-direction: column-reverse;
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    .textos_somos_popit {
+      padding: 20px;
+    }
+
+    .imagen_somos {
+      width: 75%;
+    }
+
+    .titulo_somospopit {
+      font-size: 24px;
+    }
+
+    .subtitulo_somospopit {
+      font-size: 18px;
+    }
+
+    .texto_somos {
+      font-size: 14px;
+    }
+
+    /* Partners */
+    .seccion_partners {
+      padding: 20px 40px;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+
+    .titulo_partner {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .seccion_partners img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Footer */
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .logo {
+      width: auto;
+    }
+
+    .lista_logo {
+      align-items: center;
+    }
+
+    .footer_list a {
+      display: block;
+      font-size: 12px;
+      margin: 4px 0;
+    }
+
+    .redes_texto {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .redes_sociales img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .texto_footer {
+      font-size: 12px;
+    }
+
+    /*---- Página Nosotros --------*/
+
+    /*Banner*/
+    .banner_nosotros {
+      height: auto;
+      background-size: cover;
+      padding: 60px 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .titulo_banner_nosotros {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .subtitulo_banner_nosotros {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* Sección info */
+    .seccion_somos {
+      padding: 20px;
+    }
+
+    .primer_parrafo,
+    .segundo_parrafo {
+      font-size: 16px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Sección visión y valores */
+    .seccion_vision_valores {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .imagen_vision {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .textos_vision {
+      padding: 0;
+      gap: 12px;
+    }
+
+    .titulo_vision {
+      font-size: 24px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .parrafo_vision1,
+    .parrafo_vision2,
+    .parrafo_vision3 {
+      font-size: 14px;
+      text-align: left;
+    }
+
+    /*---- Página Servicios --------*/
+
+    /*  Banner */
+    .banner_servicios {
+      height: auto;
+      padding: 60px 20px;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      margin-bottom: 40px;
+    }
+
+    .titulo_banner_servicios {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .subtitulo_banner_servicios {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /*  Grid de servicios */
+    .seccion_servicios_grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto;
+      padding: 16px;
+      gap: 20px;
+    }
+
+    .titulo_servicios-grid {
+      font-size: 22px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .digital_grid,
+    .ux_grid,
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
+      width: 100%;
+      text-align: center;
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .digital_grid img,
+    .ux_grid img,
+    .equipo_grid img,
+    .cloud_grid img,
+    .metrica-grid img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+
+    .parrafo1_digital-grid,
+    .parrafo1_ux-grid,
+    .parrafo1_equipo-grid,
+    .parrafo1_cloud-grid,
+    .parrafo1_metrica-grid {
+      font-size: 16px;
+    }
+
+    .parrafo2_digital-grid,
+    .parrafo2_ux-grid,
+    .parrafo2_equipo-grid,
+    .parrafo2_cloud-grid,
+    .parrafo2_metrica-grid {
+      font-size: 14px;
+      padding: 6px 20px;
+    }
+
+    /*---- Página Contacto --------*/
+
+    .formulario-contacto {
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .titulo-contacto {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    .subtitulo-contacto {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .form-nombre label,
+    .form-tel label,
+    .form-email label,
+    .form-mensaje label {
+      font-size: 16px;
+    }
+
+    .form-nombre input,
+    .form-tel input,
+    .form-email input,
+    .form-mensaje textarea {
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    .form-mensaje textarea {
+      height: 80px;
+    }
+
+    .submit-button {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }

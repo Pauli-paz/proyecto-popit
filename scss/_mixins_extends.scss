@@ -1,0 +1,20 @@
+// scss/_mixins_extends.scss
+// MIXIN: para centrar contenido en el cuerpo del sitio
+@mixin centrar-contenido-seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// EXTEND: para aplicar estilos base de iconos (incluye interacción)
+%estilo-icono-industria {
+    width: 48px;
+    height: 48px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.15); // Pequeña animación de interacción
+    }
+}

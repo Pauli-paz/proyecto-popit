@@ -1,0 +1,87 @@
+// scss/pages/_nosotros.scss
+
+/* Banner */
+.banner_nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-image: url(../recursos/banner\ nosotros.png);
+    height: 500px;
+    padding: 80px 700px 0 80px; // Padding adaptado
+    gap: 40px;
+    background-position: top;
+    background-size: cover;
+
+    .titulo_banner_nosotros {
+        font-size: 42px;
+        font-weight: 700;
+        color: $color-texto-oscuro; // Uso de variable
+        text-align: left;
+    }
+
+    .subtitulo_banner_nosotros {
+        font-size: 24px;
+        font-weight: 400;
+        color: $color-texto-oscuro; // Uso de variable
+        text-align: left;
+    }
+}
+
+/* Sección info */
+.seccion_somos {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .primer_parrafo, .segundo_parrafo {
+        color: $color-texto-gris; // Uso de variable
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+/* Sección vision y valores */
+.seccion_vision_valores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    .imagen_vision {
+        width: 500px;
+    }
+
+    .textos_vision {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 60px 80px 40px 40px;
+
+        .titulo_vision {
+            color: $color-texto-oscuro; // Uso de variable
+            font-size: 48px;
+            font-weight: 400;
+            text-align: left;
+            padding-bottom: 60px;
+        }
+
+        .parrafo_vision1, .parrafo_vision3 {
+            color: $color-texto-gris; // Uso de variable
+            font-size: 20px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .parrafo_vision2 {
+            color: $color-texto-gris; // Uso de variable
+            font-size: 20px;
+            font-weight: 700;
+            text-align: left;
+        }
+    }
+}

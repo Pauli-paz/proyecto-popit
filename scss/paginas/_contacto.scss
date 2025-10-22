@@ -1,0 +1,79 @@
+// scss/pages/_contacto.scss
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .titulo-contacto {
+        font-size: 42px;
+        font-weight: 700;
+        color: #B96477; // Mantengo color específico (o lo conviertes a variable si quieres)
+        text-align: left;
+    }
+
+    .subtitulo-contacto {
+        font-size: 24px;
+        font-weight: 400;
+        color: $color-texto-gris; // Uso de variable
+        text-align: left;
+    }
+
+    /* Anidamiento del Formulario */
+    .formulario-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+
+        .form-nombre, .form-tel, .form-email, .form-mensaje {
+            // Anidamiento de los campos
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            
+            label {
+                color: $color-texto-gris; // Uso de variable
+                font-size: 20px;
+                font-weight: 500;
+                width: 100%;
+            }
+        }
+        
+        input, textarea {
+            // Anidamiento de los inputs
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+
+    .submit-button {
+        background-color: #B96477;
+        font-weight: 600;
+        font-size: 16px;
+        color: #ffff;
+        padding: 10px 16px;
+        border-radius: 6px;
+        border-style: none;
+    }
+}
+
+// Media Query para Contacto (lo tomas de tu código original y lo pones al final del archivo)
+@media (max-width: 480px) {
+    .formulario-contacto {
+        padding: 10px;
+        // ... (el resto de los estilos mobile para esta página)
+    }
+}
