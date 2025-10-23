@@ -11,7 +11,7 @@
 body {
     background-color: $color-fondo-claro;
     font-family: $font-barlow;
-    // REQUISITO: Elimina el scroll horizontal en mobile.
+
     overflow-x: hidden;
 }
 

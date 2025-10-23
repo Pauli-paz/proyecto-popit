@@ -16,18 +16,18 @@
     .titulo-contacto {
         font-size: 42px;
         font-weight: 700;
-        color: #B96477; // Mantengo color específico (o lo conviertes a variable si quieres)
+        color: #B96477; 
         text-align: left;
     }
 
     .subtitulo-contacto {
         font-size: 24px;
         font-weight: 400;
-        color: $color-texto-gris; // Uso de variable
+        color: $color-texto-gris; 
         text-align: left;
     }
 
-    /* Anidamiento del Formulario */
+    
     .formulario-1 {
         display: flex;
         flex-direction: column;
@@ -37,14 +37,14 @@
         width: 100%;
 
         .form-nombre, .form-tel, .form-email, .form-mensaje {
-            // Anidamiento de los campos
+            
             display: flex;
             flex-direction: column;
             gap: 5px;
             width: 100%;
             
             label {
-                color: $color-texto-gris; // Uso de variable
+                color: $color-texto-gris; 
                 font-size: 20px;
                 font-weight: 500;
                 width: 100%;
@@ -52,7 +52,7 @@
         }
         
         input, textarea {
-            // Anidamiento de los inputs
+            
             padding: 10px;
             font-size: 16px;
             width: 100%;
@@ -70,10 +70,23 @@
     }
 }
 
-// Media Query para Contacto (lo tomas de tu código original y lo pones al final del archivo)
+// Media Query para Contacto 
 @media (max-width: 480px) {
     .formulario-contacto {
         padding: 10px;
-        // ... (el resto de los estilos mobile para esta página)
+       
+    }
+
+    .titulo-contacto {
+      font-size: 28px;
+    }
+    .subtitulo-contacto {
+      font-size: 16px;
+    }
+    .formulario-1{
+       input, textarea {
+            font-size: 14px;
+            padding: 8px;
+        }
     }
 }

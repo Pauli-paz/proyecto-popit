@@ -1,6 +1,6 @@
 // scss/pages/_home.scss
 
-// ANIMACIÓN: REQUISITO DE ENTREGA
+
 @keyframes fade-in-slide-down {
     0% { opacity: 0; transform: translateY(-20px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -19,7 +19,7 @@
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 80px;
-        // Aplico la animación
+
         animation: fade-in-slide-down 1.5s ease-out forwards;
     }
 
@@ -32,7 +32,7 @@
 
 // ----- Sección info------- 
 .seccion_info {
-    // Uso del MIXIN
+    // MIXIN
     @include centrar-contenido-seccion();
     margin-top: 3%;
     padding: 0 16px 40px;
@@ -51,12 +51,12 @@
         gap: 40px;
 
         .eye, .lamp, .hand, .search {
-            // Anidamiento
+            
             @include centrar-contenido-seccion;
             padding: 16px;
             gap: 12px;
 
-            // Uso del EXTEND
+            
             .icon_eye, .icon_lamp, .icon_hand, .icon_search {
                 @extend %estilo-icono-industria;
             }
@@ -75,7 +75,7 @@
     margin-bottom: 40px;
 
     .textos_somos_popit {
-        // Anidamiento
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -109,7 +109,7 @@
 
 /* Sección partners */
 .seccion_partners {
-    // Uso del MIXIN
+    // MIXIN
     @include centrar-contenido-seccion;
     padding: 80px 0px;
     gap: 60px;
@@ -119,4 +119,51 @@
         font-weight: 600;
         color: $color-primario;
     }
+}
+
+@media (max-width: 480px) {
+  
+  .carousel-caption {
+    padding: 20px;
+    width: 100%;
+    
+    h5 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .seccion_info .industrias {
+    flex-direction: column; 
+    width: 100%;
+    padding: 0 20px;
+    gap: 16px;
+    
+    .eye, .lamp, .hand, .search {
+      width: 100%; 
+    }
+  }
+  
+  /* Sección Somos */
+  .somos_popit {
+    flex-direction: column-reverse; 
+    
+    .imagen_somos {
+      width: 75%;
+      height: auto;
+    }
+    .textos_somos_popit {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  /* Partners */
+  .seccion_partners img {
+    max-width: 100%;
+    height: auto;
+  }
 }

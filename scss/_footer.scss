@@ -1,6 +1,6 @@
-// FOOTER (Requisito: anidamiento)
+// FOOTER 
 footer {
-    background-color: #f4f6f9; // Mantengo color específico si es intencional
+    background-color: #f4f6f9; 
     font-size: 8px;
     font-weight: 400;
     display: flex;
@@ -43,9 +43,9 @@ footer {
 
         .redes_sociales {
             display: flex;
-            gap: 0; // Usar el espaciado de las imágenes si es el diseño
+            gap: 0; 
             
-            // Anidamiento de imágenes de redes sociales
+            
             .instagram_logo,
             .linkedin_logo,
             .youtube_logo {

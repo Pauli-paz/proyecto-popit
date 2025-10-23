@@ -17,14 +17,14 @@
     .titulo_banner_servicios {
         font-size: 42px;
         font-weight: 700;
-        color: $color-texto-gris; // Uso de variable
+        color: $color-texto-gris; 
         text-align: left;
     }
 
     .subtitulo_banner_servicios {
         font-size: 24px;
         font-weight: 400;
-        color: $color-texto-gris; // Uso de variable
+        color: $color-texto-gris; 
         text-align: left;
     }
 }
@@ -34,7 +34,7 @@
     background-color: #e9efff;
     margin-top: 80px;
     margin-bottom: 100px;
-    width: 1440px; // Considera hacer esto 100% y centrar para mejor responsive
+    width: 1440px;
     display: grid;
     grid-template-areas:
         "titulo_servicios-grid digital_grid ux_grid"
@@ -51,50 +51,111 @@
     .titulo_servicios-grid {
         font-size: 36px;
         font-weight: 600;
-        color: $color-secundario; // Uso de variable
+        color: $color-secundario; 
         text-align: center;
     }
 
-    /* Anidamiento de las tarjetas del Grid */
-    .digital_grid, .ux_grid, .equipo_grid, .cloud_grid, .metrica-grid {
-        background-color: $color-secundario; // Uso de variable
+    
+    .digital_grid,
+    .ux_grid,
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
+        background-color: $color-secundario; 
         align-items: center;
         align-content: center;
         padding-bottom: 16px;
         border-radius: 8px;
     }
+
     
-    // Estilos específicos de cada tarjeta
-    .digital_grid, .ux_grid {
+    .digital_grid,
+    .ux_grid {
         width: 472px;
     }
-    .equipo_grid, .cloud_grid, .metrica-grid {
+
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
         width: 300px;
     }
-    
-    .cloud_grid, .metrica-grid {
-        .imagen_cloud-grid, .imagen_metrica-grid {
+
+    .cloud_grid,
+    .metrica-grid {
+
+        .imagen_cloud-grid,
+        .imagen_metrica-grid {
             width: 300px;
             height: 278px;
         }
     }
+
     
-    // Anidamiento de párrafos dentro de las tarjetas
-    .digital_grid, .ux_grid, .equipo_grid, .cloud_grid, .metrica-grid {
-        
-        .parrafo1_digital-grid, .parrafo1_ux-grid, .parrafo1_equipo-grid, .parrafo1_cloud-grid, .parrafo1_metrica-grid {
+    .digital_grid,
+    .ux_grid,
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
+
+        .parrafo1_digital-grid,
+        .parrafo1_ux-grid,
+        .parrafo1_equipo-grid,
+        .parrafo1_cloud-grid,
+        .parrafo1_metrica-grid {
             padding-top: 8px;
-            color: $color-fondo-claro; // Uso de variable
+            color: $color-fondo-claro; 
             font-size: 18px;
             font-weight: 600;
         }
-        
-        .parrafo2_digital-grid, .parrafo2_ux-grid, .parrafo2_equipo-grid, .parrafo2_cloud-grid, .parrafo2_metrica-grid {
+
+        .parrafo2_digital-grid,
+        .parrafo2_ux-grid,
+        .parrafo2_equipo-grid,
+        .parrafo2_cloud-grid,
+        .parrafo2_metrica-grid {
             padding-bottom: 8px;
-            color: $color-fondo-claro; // Uso de variable
+            color: $color-fondo-claro; 
             font-size: 16px;
             font-weight: 400;
             padding: 0px 40px;
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .banner_servicios {
+        height: auto;
+        padding: 60px 20px;
+
+        .titulo_banner_servicios {
+            font-size: 28px;
+        }
+
+        .subtitulo_banner_servicios {
+            font-size: 18px;
+        }
+    }
+
+    .seccion_servicios_grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .digital_grid,
+    .ux_grid,
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
+        width: 90%;
+        margin: 10px 0;
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
     }
 }
