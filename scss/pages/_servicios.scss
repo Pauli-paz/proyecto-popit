@@ -1,0 +1,162 @@
+// scss/pages/_servicios.scss
+
+/* Banner */
+.banner_servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-image: url(../recursos/banner\ servicios.png);
+    height: 500px;
+    padding: 80px 700px 0 80px;
+    gap: 40px;
+    background-position: bottom;
+    background-size: cover;
+    margin-bottom: 200px;
+
+    .titulo_banner_servicios {
+        font-size: 42px;
+        font-weight: 700;
+        color: $color-texto-gris; 
+        text-align: left;
+    }
+
+    .subtitulo_banner_servicios {
+        font-size: 24px;
+        font-weight: 400;
+        color: $color-texto-gris; 
+        text-align: left;
+    }
+}
+
+/* Sección info servicios (Grid) */
+.seccion_servicios_grid {
+    background-color: #e9efff;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "titulo_servicios-grid digital_grid ux_grid"
+        "equipo_grid cloud_grid metrica-grid";
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 350px 450px;
+    column-gap: 20px;
+    padding: 20px 24px;
+    align-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
+
+    .titulo_servicios-grid {
+        font-size: 36px;
+        font-weight: 600;
+        color: $color-secundario; 
+        text-align: center;
+    }
+
+    
+    .digital_grid,
+    .ux_grid,
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
+        background-color: $color-secundario; 
+        align-items: center;
+        align-content: center;
+        padding-bottom: 16px;
+        border-radius: 8px;
+    }
+
+    
+    .digital_grid,
+    .ux_grid {
+        width: 472px;
+    }
+
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
+        width: 300px;
+    }
+
+    .cloud_grid,
+    .metrica-grid {
+
+        .imagen_cloud-grid,
+        .imagen_metrica-grid {
+            width: 300px;
+            height: 278px;
+        }
+    }
+
+    
+    .digital_grid,
+    .ux_grid,
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
+
+        .parrafo1_digital-grid,
+        .parrafo1_ux-grid,
+        .parrafo1_equipo-grid,
+        .parrafo1_cloud-grid,
+        .parrafo1_metrica-grid {
+            padding-top: 8px;
+            color: $color-fondo-claro; 
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .parrafo2_digital-grid,
+        .parrafo2_ux-grid,
+        .parrafo2_equipo-grid,
+        .parrafo2_cloud-grid,
+        .parrafo2_metrica-grid {
+            padding-bottom: 8px;
+            color: $color-fondo-claro; 
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0px 40px;
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .banner_servicios {
+        height: auto;
+        padding: 60px 20px;
+
+        .titulo_banner_servicios {
+            font-size: 28px;
+        }
+
+        .subtitulo_banner_servicios {
+            font-size: 18px;
+        }
+    }
+
+    .seccion_servicios_grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .digital_grid,
+    .ux_grid,
+    .equipo_grid,
+    .cloud_grid,
+    .metrica-grid {
+        width: 90%;
+        max-width: 350px;
+        margin: 10px 0;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

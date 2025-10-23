@@ -1,0 +1,17 @@
+// scss/estilos.scss 
+
+// VARIABLES y Herramientas
+@import "variables";
+@import "mixins_extends";
+
+// Estilos Base
+@import "base";
+
+// Estilos de Página
+@import "paginas/_home";
+@import "paginas/_nosotros";
+@import "paginas/_servicios";
+@import "paginas/_contacto";
+
+// Estilos Finales (Footer)
+@import "footer";

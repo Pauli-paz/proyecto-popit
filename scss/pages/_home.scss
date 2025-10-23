@@ -1,0 +1,168 @@
+// scss/pages/_home.scss
+
+
+@keyframes fade-in-slide-down {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Banner */
+.carousel-caption {
+    text-align: left;
+    top: 10%;
+    left: 5%;
+    padding: 80px;
+    width: 800px;
+
+    h5 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 80px;
+
+        animation: fade-in-slide-down 1.5s ease-out forwards;
+    }
+
+    p {
+        font-size: 28px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}
+
+// ----- Sección info------- 
+.seccion_info {
+    // MIXIN
+    @include centrar-contenido-seccion();
+    margin-top: 3%;
+    padding: 0 16px 40px;
+
+    .titulo_info {
+        font-size: 32px;
+        font-weight: 400;
+        color: $color-texto-gris;
+    }
+
+    .industrias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 30px 40px;
+        gap: 40px;
+
+        .eye, .lamp, .hand, .search {
+            
+            @include centrar-contenido-seccion;
+            padding: 16px;
+            gap: 12px;
+
+            
+            .icon_eye, .icon_lamp, .icon_hand, .icon_search {
+                @extend %estilo-icono-industria;
+            }
+        }
+    }
+}
+
+/* Sección Somos----- */
+.somos_popit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $color-fondo-somos;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    .textos_somos_popit {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 40px 80px;
+        text-align: center;
+        
+        .titulo_somospopit {
+            font-size: 32px;
+            color: $color-texto-gris;
+            font-weight: 600;
+        }
+        
+        .subtitulo_somospopit {
+            font-size: 20px;
+            color: $color-texto-gris;
+            font-weight: 500;
+        }
+
+        .texto_somos {
+            font-size: 16px;
+            font-weight: 400;
+            color: $color-texto-gris;
+        }
+    }
+
+    .imagen_somos {
+        width: 500px;
+    }
+}
+
+/* Sección partners */
+.seccion_partners {
+    // MIXIN
+    @include centrar-contenido-seccion;
+    padding: 80px 0px;
+    gap: 60px;
+
+    .titulo_partner {
+        font-size: 32px;
+        font-weight: 600;
+        color: $color-primario;
+    }
+}
+
+@media (max-width: 480px) {
+  
+  .carousel-caption {
+    padding: 20px;
+    width: 100%;
+    
+    h5 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .seccion_info .industrias {
+    flex-direction: column; 
+  width: 100%;
+  padding: 20px;
+    
+    .eye, .lamp, .hand, .search {
+      width: 100%; 
+    }
+  }
+  
+  /* Sección Somos */
+  .somos_popit {
+    flex-direction: column-reverse; 
+    
+    .imagen_somos {
+      width: 75%;
+      height: auto;
+    }
+    .textos_somos_popit {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  /* Partners */
+  .seccion_partners img {
+    max-width: 100%;
+    height: auto;
+  }
+}

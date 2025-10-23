@@ -1,0 +1,92 @@
+// scss/pages/_contacto.scss
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .titulo-contacto {
+        font-size: 42px;
+        font-weight: 700;
+        color: #B96477; 
+        text-align: left;
+    }
+
+    .subtitulo-contacto {
+        font-size: 24px;
+        font-weight: 400;
+        color: $color-texto-gris; 
+        text-align: left;
+    }
+
+    
+    .formulario-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+
+        .form-nombre, .form-tel, .form-email, .form-mensaje {
+            
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            
+            label {
+                color: $color-texto-gris; 
+                font-size: 20px;
+                font-weight: 500;
+                width: 100%;
+            }
+        }
+        
+        input, textarea {
+            
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+
+    .submit-button {
+        background-color: #B96477;
+        font-weight: 600;
+        font-size: 16px;
+        color: #ffff;
+        padding: 10px 16px;
+        border-radius: 6px;
+        border-style: none;
+    }
+}
+
+// Media Query para Contacto 
+@media (max-width: 480px) {
+    .formulario-contacto {
+        padding: 10px;
+       
+    }
+
+    .titulo-contacto {
+      font-size: 28px;
+    }
+    .subtitulo-contacto {
+      font-size: 16px;
+    }
+    .formulario-1{
+       input, textarea {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+}

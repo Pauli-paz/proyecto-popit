@@ -1,0 +1,64 @@
+// FOOTER 
+footer {
+    background-color: #f4f6f9; 
+    font-size: 8px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+
+    .lista_logo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            padding: 0;
+            margin: 0;
+
+            li a {
+                font-size: $font-size-base;
+                font-weight: 400;
+                color: $color-texto-gris;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .redes_texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 12px;
+
+        .redes_sociales {
+            display: flex;
+            gap: 0; 
+            
+            
+            .instagram_logo,
+            .linkedin_logo,
+            .youtube_logo {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .texto_footer {
+            color: $color-texto-gris;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+}
