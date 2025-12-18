@@ -8,7 +8,7 @@
 @import "base";
 
 // Estilos de Página
-@import "paginas/_home";
+@use "paginas/_home";
 @import "paginas/_nosotros";
 @import "paginas/_servicios";
 @import "paginas/_contacto";

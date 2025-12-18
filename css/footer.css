@@ -1,0 +1,54 @@
+footer {
+  background-color: #f4f6f9;
+  font-size: 8px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+footer .lista_logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .lista_logo .logo {
+  width: 80px;
+  height: 80px;
+}
+footer .lista_logo nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+footer .lista_logo nav ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5f5f5f;
+  text-decoration: none;
+}
+footer .redes_texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 12px;
+}
+footer .redes_texto .redes_sociales {
+  display: flex;
+  gap: 0;
+}
+footer .redes_texto .redes_sociales .instagram_logo,
+footer .redes_texto .redes_sociales .linkedin_logo,
+footer .redes_texto .redes_sociales .youtube_logo {
+  width: 48px;
+  height: 48px;
+}
+footer .redes_texto .texto_footer {
+  color: #5f5f5f;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}/*# sourceMappingURL=footer.css.map */
