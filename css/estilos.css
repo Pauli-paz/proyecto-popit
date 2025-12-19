@@ -912,7 +912,8 @@ a {
 /* Hero Minimalist */
 .nosotros-hero {
   position: relative;
-  min-height: 500px;
+  min-height: 600px;
+  /* Increased from 500px */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -922,6 +923,8 @@ a {
   background-position: top;
   color: #333;
   padding: 0 20px;
+  margin-bottom: 60px;
+  /* Added spacing to next section */
 }
 
 .nosotros-hero::before {
@@ -950,6 +953,26 @@ a {
   background-clip: text;
   /* Fallback for text shadow if gradient fails, but gradient usually overrides color */
   text-shadow: none;
+}
+
+/* Fix for Nosotros page image (avoid stretching + hover effect) */
+.img-fix-nosotros {
+  width: 100%;
+  height: 400px;
+  /* Consistent height */
+  object-fit: cover;
+  /* Ensures no stretching */
+  border-radius: 20px;
+  /* Matching existing radius */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.img-fix-nosotros:hover {
+  transform: scale(1.02);
+  /* Subtle zoom */
+  box-shadow: 0 20px 40px rgba(203, 35, 144, 0.2) !important;
+  /* Glow effect */
 }
 
 .nosotros-hero p {
