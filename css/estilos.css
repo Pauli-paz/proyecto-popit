@@ -204,8 +204,9 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  /* Deep Tech Gradient (Left Dark -> Right Transparent) to reveal video but keep text legible */
-  background: linear-gradient(90deg, rgba(5, 12, 30, 0.9) 0%, rgba(10, 24, 60, 0.7) 40%, rgba(203, 35, 144, 0.2) 100%);
+  /* Deep Tech Gradient - SUBTLE Version */
+  /* Reduced opacity: 0.9->0.5, 0.7->0.3, 0.2->0.1 */
+  background: linear-gradient(90deg, rgba(5, 12, 30, 0.6) 0%, rgba(10, 24, 60, 0.4) 40%, rgba(203, 35, 144, 0.1) 100%);
   z-index: 2;
 }
 
