@@ -210,6 +210,10 @@ a {
   z-index: 2;
 }
 
+.hero-overlay-ultra-light {
+  background: linear-gradient(90deg, rgba(5, 12, 30, 0.3) 0%, rgba(10, 24, 60, 0.2) 40%, rgba(203, 35, 144, 0.05) 100%) !important;
+}
+
 .hero-content {
   position: absolute;
   top: 50%;
