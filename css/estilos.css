@@ -299,8 +299,9 @@ a {
 
 
 
+
 /* =========================================
-   SECCION INFO (INDUSTRIAS)
+   SECCION INFO (NUESTROS SERVICIOS) - UPDATED
    ========================================= */
 .seccion_info {
   display: flex;
@@ -309,13 +310,15 @@ a {
   align-items: center;
   margin-top: 5%;
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: #fafafa;
+  /* Slightly grey background often looks better with white cards */
 }
 
 .seccion_info .titulo_info {
   font-size: 2.5rem;
-  font-weight: 600;
-  color: var(--color-texto-gris);
+  font-weight: 700;
+  color: #333;
+  /* Darker title */
   margin-bottom: 60px;
   text-align: center;
 }
@@ -330,69 +333,101 @@ a {
   flex-wrap: wrap;
 }
 
-.industrias>div {
+/* Card Container */
+.industria-card {
   flex: 1;
-  min-width: 250px;
+  min-width: 300px;
+  /* Wider cards */
+  max-width: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
+  padding: 50px 30px;
   background-color: #fff;
-  border-radius: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  /* Subtle border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   opacity: 0;
-  /* Animation defined above in @keyframes */
   animation: fade-in-up 0.8s ease-out forwards;
 }
 
-/* Staggered Delay */
-.industrias>div:nth-child(1) {
+/* Animation Delays */
+.industria-card:nth-child(1) {
   animation-delay: 0.2s;
 }
 
-.industrias>div:nth-child(2) {
+.industria-card:nth-child(2) {
   animation-delay: 0.4s;
 }
 
-.industrias>div:nth-child(3) {
+.industria-card:nth-child(3) {
   animation-delay: 0.6s;
 }
 
-.industrias>div:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-.industrias>div:hover {
-  transform: translateY(-15px) scale(1.02);
+/* Hover Effect */
+.industria-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border-color: transparent;
-  box-shadow: 0 20px 50px rgba(203, 35, 144, 0.15);
 }
 
-.industrias img {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 24px;
-  transition: transform 0.5s ease;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+/* Icon Container (Blue Circle) */
+.icon-circle {
+  width: 90px;
+  height: 90px;
+  background-color: #e3f2fd;
+  /* Light Blue */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: transform 0.4s ease;
 }
 
-.industrias>div:hover img {
-  transform: scale(1.2) rotate(10deg);
-  filter: drop-shadow(0 8px 12px rgba(203, 35, 144, 0.3));
+.industria-card:hover .icon-circle {
+  transform: scale(1.1);
+  background-color: #bbdefb;
+  /* Slightly darker on hover */
 }
 
-.industrias h3 {
+/* Icons */
+.icon_service {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: hue-rotate(200deg) brightness(1.2);
+  /* Attempt to shift existing icons to blueish if they aren't already, or just leave as is. Since existing icons are likely colorful/dark, providing a tint might help or just let them be. Let's try a filter to make them blue-ish if possible, specifically filter: invert(33%) sepia(85%) saturate(3065%) hue-rotate(202deg) brightness(101%) contrast(106%); matches a specific blue. But simpler is just hue-rotate if they are colored. Let's assume standard svg/png. */
+  /* For now, just ensuring size. If they are black/white pngs, we might need filter to colorize them blue. */
+  /* If original icons are colored, this filter might make them weird. Let's try to just size them first. */
+  transition: all 0.3s ease;
+}
+
+
+/* Titles */
+.titulo_service {
   margin-bottom: 16px;
-  color: var(--color-secundario);
-  font-size: 1.4rem;
+  color: #333;
+  /* Dark Grey/Black */
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
 }
 
-.industrias p {
-  color: var(--color-texto-parrafo);
+/* Texts */
+.texto_service {
+  color: #666;
+  /* Grey text */
   font-size: 1rem;
   line-height: 1.6;
+  text-align: center;
+  max-width: 300px;
+  /* limit width for readability */
 }
+
+
 
 
 /* =========================================
@@ -602,11 +637,13 @@ a {
   flex: 1;
   max-width: 550px;
   height: auto;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  /* Removed border-radius and box-shadow for cleaner look */
+  /* border-radius: 20px; */
+  /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1); */
   z-index: 1;
   transition: transform 0.1s linear;
-  /* Smooth scroll update */
+  mix-blend-mode: multiply;
+  /* Make white background transparent */
 }
 
 
@@ -789,18 +826,21 @@ a {
 }
 
 /* The Grid inside each Slide */
+/* The Grid inside each Slide - Changed to Flex for better centering of 7 items */
 .partners-grid-slide {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* 4 Columns */
-  grid-auto-rows: 150px;
-  /* Fixed cell height */
-  /* Borders removed */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  /* grid-template-columns: repeat(4, 1fr);  Removed */
+  /* grid-auto-rows: 150px; Removed */
 }
 
 /* Individual Cell */
 .partner-cell {
-  background-color: #fafafa;
+  background-color: transparent;
+  /* Removed background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -808,21 +848,28 @@ a {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  /* Approx 4 items per row accounting for gap */
+  flex: 0 0 22%;
+  height: 150px;
 }
 
 .partner-cell img {
   max-width: 70%;
   max-height: 60px;
-  filter: grayscale(100%);
-  opacity: 0.6;
+  /* Grayscale removed for full color */
+  /* filter: grayscale(100%); */
+  opacity: 1;
+  /* Full opacity */
   transition: all 0.4s ease;
   object-fit: contain;
 }
 
 /* Hover Effects */
 .partner-cell:hover {
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  /* No background on hover */
+  box-shadow: none;
+  /* No shadow */
   z-index: 1;
   /* Bring above borders */
   border-color: transparent;
@@ -830,9 +877,8 @@ a {
 }
 
 .partner-cell:hover img {
-  filter: grayscale(0%);
-  opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.4);
+  /* Increased zoom */
 }
 
 /* Carousel Indicators (Dots) */
@@ -1282,4 +1328,101 @@ footer {
   .partners-grid-slide {
     grid-template-columns: 1fr;
   }
+}
+
+/* =========================================
+   STRATEGIC PARTNERS SECTION (New)
+   ========================================= */
+.strategic-partners-section {
+  padding: 80px 0;
+  background: white;
+  /* Clean background to separate from footer */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional: Subtle tech background pattern or gradient strip */
+.strategic-partners-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(203, 35, 144, 0.03) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 0;
+}
+
+.partners-title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.partners-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primario);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.partners-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Special "Floating" Cards for these partners */
+.special-partner-card {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  /* Soft shadow */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 15px;
+  cursor: pointer;
+}
+
+.special-partner-card img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  transition: all 0.4s ease;
+  filter: grayscale(100%) opacity(0.7);
+  /* Muted by default */
+}
+
+/* Hover Effects - "Innovation" glow */
+.special-partner-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(71, 90, 139, 0.2);
+  /* Blueish glow matching branding */
+  border-color: rgba(71, 90, 139, 0.1);
+}
+
+.special-partner-card:hover img {
+  filter: grayscale(0%) opacity(1);
+  /* Full color on hover */
+  transform: scale(1.1);
 }
